@@ -5,7 +5,7 @@ namespace HandApiTest.Models
 {
     public class LaboratoryReport
     {
-        public string LabReportHeader { get; set; } //= "LABORATORY REPORT LINE DELIMIT";
+        public string LabReportHeader { get; set; } //= "LABORATORY REPORT COMMA DELIMIT";
         public string ReportHeader { get; set; } //= "(*CDR_REPORT";
         public StaticSection StaticSection { get; set; }
         public OrganismSection OrganismSection { get; set; }
@@ -32,7 +32,7 @@ namespace HandApiTest.Models
 
         public LaboratoryReport()
         {
-            LabReportHeader = "LABORATORY REPORT LINE DELIMIT";
+            LabReportHeader = "LABORATORY REPORT COMMA DELIMIT";
             ReportHeader = "(*CDR_REPORT";
             ReportFooter = "CDR_REPORT*)";
         }
